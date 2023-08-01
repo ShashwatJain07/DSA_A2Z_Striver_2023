@@ -1,0 +1,37 @@
+## Move 0's to the End of array
+
+// void preverse(int n, vector<int> arr, int start, int end){
+//    // int start=0;int end=n-1;
+//    int temp;
+//     while(start<=end){
+//         temp=arr[start];
+//         arr[start]=arr[end];
+//         arr[end]=temp;
+//         start++;
+//         end--;
+//     }
+// }
+
+vector<int> moveZeros(int n, vector<int> arr) {
+    // Write your code here.
+    /*for(int i=0;i<n;i++){
+        sort(arr.begin(), arr.end());
+        preverse(n,arr,);
+    }*/
+    vector <int> brr(n);int count=0;
+    for(int i=0;i<n;i++){
+        if(arr[i]!=0){
+            brr[i-count]=arr[i];
+        }
+        else{
+            brr[n-1-count]=0;
+            count+=1;
+
+        }    
+    }
+    // while(count>0){
+    //     brr.push_back(0);
+    //     count--;
+    // }
+    return brr;
+}
