@@ -1,0 +1,12 @@
+##CHECK IF ARRAY IS SORTED
+
+int isSorted(int n, vector<int> a) {
+    // Write your code here.
+    int diff=0;
+    for(int i=0;i<n-1;i++){
+        diff=a[i+1]-a[i];
+        if(diff<0)
+            return 0;
+    }
+    return 1;
+}
