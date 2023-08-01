@@ -1,0 +1,15 @@
+## Largest Element in an Array
+
+#include <bits/stdc++.h> 
+int largestElement(vector<int> &arr, int n) {
+    // Write your code here.
+    int maxi=arr[0];
+    for(int i=1;i<n;i++){
+        if(arr[i]>maxi){
+            maxi=arr[i];
+        }
+    }
+    return maxi;
+    /*sort(arr.begin(), arr.end());
+     return arr[n-1]*/
+}
