@@ -1,5 +1,6 @@
 // Union of 2 arrays 
 // A union B = A + B +  A intersection B 
+//Optimal approach which would even work on unsorted arrays present in comments in the end
 
 vector<int> sortedArray(vector<int> a, vector<int> b) {
     vector<int> arr;
